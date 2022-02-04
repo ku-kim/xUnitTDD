@@ -6,6 +6,6 @@ public class xUnitTest {
         new TestCaseTest("testResult").run();
         new TestCaseTest("testFailedResultFormatting").run();
         new TestCaseTest("testFailedResult").run();
-
+        new TestCaseTest("testSuite").run();
     }
 }
