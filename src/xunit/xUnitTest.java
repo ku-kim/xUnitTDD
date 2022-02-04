@@ -2,10 +2,12 @@ package xunit;
 
 public class xUnitTest {
     public static void main(String[] args) {
-        new TestCaseTest("testTemplateMethod").run();
-        new TestCaseTest("testResult").run();
-        new TestCaseTest("testFailedResultFormatting").run();
-        new TestCaseTest("testFailedResult").run();
-        new TestCaseTest("testSuite").run();
+        TestResult result = new TestResult();
+        new TestCaseTest("testTemplateMethod").run(result);
+        new TestCaseTest("testResult").run(result);
+        new TestCaseTest("testFailedResultFormatting").run(result);
+        new TestCaseTest("testFailedResult").run(result);
+        new TestCaseTest("testSuite").run(result);
+        System.out.println(result.getSummary());
     }
 }
