@@ -5,5 +5,7 @@ public class xUnitTest {
         new TestCaseTest("testTemplateMethod").run();
         new TestCaseTest("testResult").run();
         new TestCaseTest("testFailedResultFormatting").run();
+        new TestCaseTest("testFailedResult").run();
+
     }
 }
