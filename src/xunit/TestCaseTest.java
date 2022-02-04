@@ -5,6 +5,17 @@ public class TestCaseTest extends TestCase {
         super(name);
     }
 
+    public static TestSuite suite() {
+        TestSuite suite = new TestSuite();
+        suite.add(new TestCaseTest("testTemplateMethod"));
+        suite.add(new TestCaseTest("testResult"));
+        suite.add(new TestCaseTest("testFailedResultFormatting"));
+        suite.add(new TestCaseTest("testFailedResult"));
+        suite.add(new TestCaseTest("testSuite"));
+
+        return suite; // 2000년대 초반 junit 코드 실제로 이렇게 다 작성 되어 있었음
+    }
+
     public void testTemplateMethod() {
         WasRun wasRun = new WasRun("testMethod");
         TestResult result = new TestResult();
