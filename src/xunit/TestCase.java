@@ -19,12 +19,11 @@ public class TestCase {
         try {
             Method method = getClass().getMethod(name);
             method.invoke(this);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            result.testFailed();
         }
 
         tearDown();
-
         return result;
     }
 
