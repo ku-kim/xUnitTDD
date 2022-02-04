@@ -19,7 +19,6 @@ public class TestCase {
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public void setUp() {
