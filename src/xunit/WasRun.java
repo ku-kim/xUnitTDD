@@ -16,5 +16,8 @@ public class WasRun extends TestCase {
         log += " testMethod";
     }
 
-
+    @Override
+    public void tearDown() {
+        log += " tearDown";
+    }
 }

@@ -10,5 +10,4 @@ public class TestCaseTest extends TestCase {
         wasRun.run();
         Assert.assertEquals("setUp testMethod tearDown", wasRun.log);
     }
-
 }
