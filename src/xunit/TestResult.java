@@ -1,7 +1,13 @@
 package xunit;
 
 public class TestResult {
+    int runCount = 0;
+
+    public void testStarted() {
+        runCount++;
+    }
+    
     public String getSummary() {
-        return "1 run, 0 failed";
+        return runCount + " run, 0 failed";
     }
 }
