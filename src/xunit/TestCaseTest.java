@@ -7,11 +7,11 @@ public class TestCaseTest extends TestCase {
 
     public static TestSuite suite() {
         TestSuite suite = new TestSuite();
-        suite.add(new TestCaseTest("testTemplateMethod"));
-        suite.add(new TestCaseTest("testResult"));
-        suite.add(new TestCaseTest("testFailedResultFormatting"));
-        suite.add(new TestCaseTest("testFailedResult"));
-        suite.add(new TestCaseTest("testSuite"));
+//        suite.add(new TestCaseTest("testTemplateMethod")); // 초기 junit은 test 메서드명은 앞에 'test'가 붙어있었다. 이를 위해 리플랙션을 활용해 구현해보자.
+//        suite.add(new TestCaseTest("testResult"));
+//        suite.add(new TestCaseTest("testFailedResultFormatting"));
+//        suite.add(new TestCaseTest("testFailedResult"));
+//        suite.add(new TestCaseTest("testSuite"));
 
         return suite; // 2000년대 초반 junit 코드 실제로 이렇게 다 작성 되어 있었음
     }
